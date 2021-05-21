@@ -27,6 +27,6 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
     jobs:
       - PS5-Stock
