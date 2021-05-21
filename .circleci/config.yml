@@ -13,16 +13,8 @@ jobs:
           collection: ./Stock.postman_collection.json
       - discord/status:
           fail_only: false
-          success_message:  "TESTING Found PS5 Stock. \n
-            https://www.thewarehouse.co.nz/p/ps5-console/R2695122.html \n
-            https://www.thewarehouse.co.nz/p/ps5-playstation-5-digital-edition/R2695123.html \n
-            https://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015a-console/prod192865.html \n
-            https://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015b-digital-edition-console/prod192879.html"
-          failure_message: "TESTING Found PS5 Stock. \n
-            https://www.thewarehouse.co.nz/p/ps5-console/R2695122.html \n
-            https://www.thewarehouse.co.nz/p/ps5-playstation-5-digital-edition/R2695123.html \n
-            https://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015a-console/prod192865.html \n
-            https://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015b-digital-edition-console/prod192879.html"
+          success_message: "TESTING Found PS5 Stock.\nhttps://www.thewarehouse.co.nz/p/ps5-console/R2695122.html\nhttps://www.thewarehouse.co.nz/p/ps5-playstation-5-digital-edition/R2695123.html\nhttps://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015a-console/prod192865.html\nhttps://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015b-digital-edition-console/prod192879.html"
+          failure_message: "TESTING Found PS5 Stock.\nhttps://www.thewarehouse.co.nz/p/ps5-console/R2695122.html\nhttps://www.thewarehouse.co.nz/p/ps5-playstation-5-digital-edition/R2695123.html\nhttps://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015a-console/prod192865.html\nhttps://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015b-digital-edition-console/prod192879.html"
           webhook: "${DISCORD_STATUS_WEBHOOK}"
 workflows:
   version: 2
