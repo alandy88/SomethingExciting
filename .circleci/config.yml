@@ -11,8 +11,8 @@ jobs:
           collection: ./Stock.postman_collection.json
       - discord/status:
           fail_only: false
-          failure_message: "**${CIRCLE_JOB}** failed."
-          webhook: "https://discord.com/api/webhooks/845415359527911485/U0f8h1rAXgU24fBn3y-z3zQSqbroI7CZ-MmI9A0i5BPP2LBYPNTG_ExcizlvhnaqwtS1"
+          failure_message: "**${CIRCLE_USERNAME}**'s build: **${CIRCLE_JOB}** failed."
+          webhook: "${DISCORD_STATUS_WEBHOOK}"
 workflows:
   version: 2
   build_and_test:
