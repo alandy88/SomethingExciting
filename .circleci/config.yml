@@ -8,3 +8,18 @@ jobs:
       - checkout
       - newman/newman-run:
           collection: ./Stock.postman_collection.json
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - newman-collection-run
+  daily:
+    triggers:
+      - schedule:
+          cron: "0,5,10,15,20,25,30,35,40,45,50,55 10 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - newman-collection-run
