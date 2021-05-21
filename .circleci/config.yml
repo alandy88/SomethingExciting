@@ -18,6 +18,9 @@ jobs:
           mentions: "Zansin#3228,Exias#9200,CaratG#7392,lei2986852#3457"
 workflows:
   version: 2
+  build_and_test:
+    jobs:
+      - PS5-Stock
   daily:
     triggers:
       - schedule:
