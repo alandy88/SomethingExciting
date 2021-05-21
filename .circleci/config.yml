@@ -15,7 +15,7 @@ jobs:
           fail_only: false
           failure_message: "**${CIRCLE_USERNAME}**'s build: **${CIRCLE_JOB}** failed."
           webhook: "${DISCORD_STATUS_WEBHOOK}"
-          mentions: "Zansin#3228,Exias#9200,CaratG#7392,lei2986852#3457"
+          mentions: "here"
 workflows:
   version: 2
   build_and_test:
