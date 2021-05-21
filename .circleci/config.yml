@@ -12,9 +12,8 @@ jobs:
       - newman/newman-run:
           collection: ./Stock.postman_collection.json
       - discord/status:
-          fail_only: false
+          fail_only: true
           failure_message: "**${CIRCLE_USERNAME}**'s build: **${CIRCLE_JOB}** failed."
-          mentions: "@Zansin#3228"
           webhook: "${DISCORD_STATUS_WEBHOOK}"
 workflows:
   version: 2
