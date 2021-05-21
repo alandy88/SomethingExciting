@@ -14,8 +14,8 @@ jobs:
       - discord/status:
           fail_only: false
           failure_message: "**${CIRCLE_USERNAME}**'s build: **${CIRCLE_JOB}** failed."
+          mentions: "Zansin"
           webhook: "${DISCORD_STATUS_WEBHOOK}"
-          mentions: "here"
 workflows:
   version: 2
   build_and_test:
@@ -24,7 +24,7 @@ workflows:
   daily:
     triggers:
       - schedule:
-          cron: "0,5,10,15,20,25,30,35,40,45,50,55 10 * * *"
+          cron: "0,5,10,15,20,25,30,35,40,45,50,55 * * * *"
           filters:
             branches:
               only:
