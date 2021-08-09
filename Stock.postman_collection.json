@@ -128,7 +128,8 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Out of stock\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(\"Out of stock\");\r",
+							"    pm.response.to.have.status(404)\r",
+							"    //pm.expect(pm.response.text()).to.include(\"Out of stock\");\r",
 							"});"
 						],
 						"type": "text/javascript"
