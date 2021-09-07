@@ -232,6 +232,42 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "WarehouseXBoxX1tb",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Out of stock\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Out of stock\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.thewarehouse.co.nz/p/xbox-series-x-1tb-console/R2708605.html",
+					"protocol": "https",
+					"host": [
+						"www",
+						"thewarehouse",
+						"co",
+						"nz"
+					],
+					"path": [
+						"p",
+						"xbox-series-x-1tb-console",
+						"R2708605.html"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
