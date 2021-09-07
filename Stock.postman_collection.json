@@ -84,6 +84,45 @@
 			"response": []
 		},
 		{
+			"name": "NoellemingXBoxX",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Out of stock\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Sold Out Online\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.noelleeming.co.nz/shop/games-gaming/xbox/xbox-series-x/xbox-series-rrt-00021-x-console/prod193770.html",
+					"protocol": "https",
+					"host": [
+						"www",
+						"noelleeming",
+						"co",
+						"nz"
+					],
+					"path": [
+						"shop",
+						"games-gaming",
+						"xbox",
+						"xbox-series-x",
+						"xbox-series-rrt-00021-x-console",
+						"prod193770.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "WarehouseDisk",
 			"event": [
 				{
@@ -152,6 +191,42 @@
 						"p",
 						"ps5-playstation-5-digital-edition",
 						"R2695123.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WarehouseXBoxXHalo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Out of stock\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"Out of stock\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.thewarehouse.co.nz/p/xbox-series-x-halo-infinite-limited-edition-bundle/R2784701.html",
+					"protocol": "https",
+					"host": [
+						"www",
+						"thewarehouse",
+						"co",
+						"nz"
+					],
+					"path": [
+						"p",
+						"xbox-series-x-halo-infinite-limited-edition-bundle",
+						"R2784701.html"
 					]
 				}
 			},
