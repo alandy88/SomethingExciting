@@ -91,7 +91,8 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Out of stock\", function () {\r",
-							"    pm.expect(pm.response.text()).to.include(\"Sold Out Online\");\r",
+							"    // pm.expect(pm.response.text()).to.include(\"Sold Out Online\");\r",
+							"    pm.response.to.have.status(404);\r",
 							"});"
 						],
 						"type": "text/javascript"
