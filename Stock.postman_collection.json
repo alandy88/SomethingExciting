@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "a44a541f-2d45-4eeb-8363-11f132afbe79",
+		"_postman_id": "d809c74b-0026-48ef-bc2f-9201f810cb26",
 		"name": "Stock",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -369,7 +369,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://products.jbhifi.co.nz/product/get/ids",
+					"raw": "https://products.jbhifi.co.nz/product/get/id",
 					"protocol": "https",
 					"host": [
 						"products",
@@ -380,7 +380,7 @@
 					"path": [
 						"product",
 						"get",
-						"ids"
+						"id"
 					]
 				}
 			},
