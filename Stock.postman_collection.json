@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d809c74b-0026-48ef-bc2f-9201f810cb26",
+		"_postman_id": "989b7186-ba56-461d-8e56-030e7a6f0d41",
 		"name": "Stock",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -293,6 +293,86 @@
 						"p",
 						"xbox-series-x-1tb-console",
 						"R2708605.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MightApePS5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Unavailable to order\", function () {\r",
+							"    if (pm.response.code == 200) {\r",
+							"        pm.expect(pm.response.text()).to.include(\"is not currently available to order\");\r",
+							"    } else{\r",
+							"        pm.response.to.have.status(404)\r",
+							"    }\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.mightyape.co.nz/product/sony-playstation-5-console/31675007",
+					"protocol": "https",
+					"host": [
+						"www",
+						"mightyape",
+						"co",
+						"nz"
+					],
+					"path": [
+						"product",
+						"sony-playstation-5-console",
+						"31675007"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MightApeXBox",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Unavailable to order\", function () {\r",
+							"    if (pm.response.code == 200) {\r",
+							"        pm.expect(pm.response.text()).to.include(\"is not currently available to order\");\r",
+							"    } else{\r",
+							"        pm.response.to.have.status(404)\r",
+							"    }\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.mightyape.co.nz/product/xbox-series-x-console/30472387",
+					"protocol": "https",
+					"host": [
+						"www",
+						"mightyape",
+						"co",
+						"nz"
+					],
+					"path": [
+						"product",
+						"xbox-series-x-console",
+						"30472387"
 					]
 				}
 			},
