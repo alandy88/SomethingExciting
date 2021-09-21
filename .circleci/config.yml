@@ -15,14 +15,16 @@ jobs:
           webhook: "${DISCORD_STATUS_WEBHOOK}"
           fail_only: true
           failure_message: >
-            Warehouse PS5 Disk https://www.thewarehouse.co.nz/p/ps5-console/R2695122.html
-            Warehouse PS5 Digital https://www.thewarehouse.co.nz/p/ps5-playstation-5-digital-edition/R2695123.html
-            Warehouse Xbox X Halo https://www.thewarehouse.co.nz/p/xbox-series-x-halo-infinite-limited-edition-bundle/R2784701.html
-            Warehouse xbox X 1tb https://www.thewarehouse.co.nz/p/xbox-series-x-1tb-console/R2708605.html
-            NoelLemming PS5 Disk https://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015a-console/prod192865.html
+            Warehouse PS5 Disk      https://www.thewarehouse.co.nz/p/ps5-console/R2695122.html
+            Warehouse PS5 Digital   https://www.thewarehouse.co.nz/p/ps5-playstation-5-digital-edition/R2695123.html
+            Warehouse Xbox X Halo   https://www.thewarehouse.co.nz/p/xbox-series-x-halo-infinite-limited-edition-bundle/R2784701.html
+            Warehouse xbox X 1tb    https://www.thewarehouse.co.nz/p/xbox-series-x-1tb-console/R2708605.html
+            NoelLemming PS5 Disk    https://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015a-console/prod192865.html
             NoelLemming PS5 Digital https://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015b-digital-edition-console/prod192879.html
-            NoelLemming XBox X https://www.noelleeming.co.nz/shop/games-gaming/xbox/xbox-series-x/xbox-series-rrt-00021-x-console/prod193770.html
-            JB Hifi XBox X https://www.jbhifi.co.nz/gaming/games/Gaming-Consoles/xbox-series-x/xbox-series-x-console-halo-infinite-limited-edition/400800/
+            NoelLemming XBox X      https://www.noelleeming.co.nz/shop/games-gaming/xbox/xbox-series-x/xbox-series-rrt-00021-x-console/prod193770.html
+            JB Hifi XBox X          https://www.jbhifi.co.nz/gaming/games/Gaming-Consoles/xbox-series-x/xbox-series-x-console-halo-infinite-limited-edition/400800/
+            MightyApe PS5           https://www.mightyape.co.nz/product/sony-playstation-5-console/31675007
+            MightyApe XBox          https://www.mightyape.co.nz/product/xbox-series-x-console/30472387
           
 workflows:
   version: 2
