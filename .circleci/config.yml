@@ -13,7 +13,7 @@ jobs:
           collection: ./Stock.postman_collection.json
       - discord/status:
           webhook: "${DISCORD_STATUS_WEBHOOK}"
-          fail_only: true
+          fail_only: false
           failure_message: >
             Warehouse PS5 Disk      https://www.thewarehouse.co.nz/p/ps5-console/R2695122.html
             Warehouse PS5 Digital   https://www.thewarehouse.co.nz/p/ps5-playstation-5-digital-edition/R2695123.html
