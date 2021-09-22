@@ -1,10 +1,140 @@
 {
 	"info": {
-		"_postman_id": "989b7186-ba56-461d-8e56-030e7a6f0d41",
+		"_postman_id": "484b7e0f-a8d2-42c1-a7b7-6e39444b10cd",
 		"name": "Stock",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
+		{
+			"name": "NoellemmingDisk",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Page not found\", function () {\r",
+							"    if (pm.response.code == 200) {\r",
+							"        pm.expect(pm.response.text()).to.include(\"Out of stock\");\r",
+							"    } else{\r",
+							"        console.log(pm.response.code)\r",
+							"    }\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015a-console/prod192865.html",
+					"protocol": "https",
+					"host": [
+						"www",
+						"noelleeming",
+						"co",
+						"nz"
+					],
+					"path": [
+						"shop",
+						"games-gaming",
+						"playstation",
+						"playstation-5",
+						"playstation-5-cfi-1015a-console",
+						"prod192865.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoellemingDigital",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Page not found\", function () {\r",
+							"    if (pm.response.code == 200) {\r",
+							"        pm.expect(pm.response.text()).to.include(\"Out of stock\");\r",
+							"    } else{\r",
+							"        console.log(pm.response.code)\r",
+							"    }\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.noelleeming.co.nz/shop/games-gaming/playstation/playstation-5/playstation-5-cfi-1015b-digital-edition-console/prod192879.html",
+					"protocol": "https",
+					"host": [
+						"www",
+						"noelleeming",
+						"co",
+						"nz"
+					],
+					"path": [
+						"shop",
+						"games-gaming",
+						"playstation",
+						"playstation-5",
+						"playstation-5-cfi-1015b-digital-edition-console",
+						"prod192879.html"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "NoellemingXBoxX",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Out of stock\", function () {\r",
+							"    // pm.expect(pm.response.text()).to.include(\"Sold Out Online\");\r",
+							"    if (pm.response.code == 200) {\r",
+							"        pm.expect(pm.response.text()).to.include(\"Out of stock\");\r",
+							"    } else{\r",
+							"        console.log(pm.response.code)\r",
+							"    }\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.noelleeming.co.nz/shop/games-gaming/xbox/xbox-series-x/xbox-series-rrt-00021-x-console/prod193770.html",
+					"protocol": "https",
+					"host": [
+						"www",
+						"noelleeming",
+						"co",
+						"nz"
+					],
+					"path": [
+						"shop",
+						"games-gaming",
+						"xbox",
+						"xbox-series-x",
+						"xbox-series-rrt-00021-x-console",
+						"prod193770.html"
+					]
+				}
+			},
+			"response": []
+		},
 		{
 			"name": "WarehouseDisk",
 			"event": [
@@ -178,8 +308,8 @@
 							"pm.test(\"Unavailable to order\", function () {\r",
 							"    if (pm.response.code == 200) {\r",
 							"        pm.expect(pm.response.text()).to.include(\"is not currently available to order\");\r",
-							"    } else{\r",
-							"        pm.response.to.have.status(404)\r",
+							"    } else {\r",
+							"        console.log(pm.response.code)\r",
 							"    }\r",
 							"});"
 						],
@@ -219,7 +349,7 @@
 							"    if (pm.response.code == 200) {\r",
 							"        pm.expect(pm.response.text()).to.include(\"is not currently available to order\");\r",
 							"    } else{\r",
-							"        pm.response.to.have.status(404)\r",
+							"        console.log(pm.response.code)\r",
 							"    }\r",
 							"});"
 						],
