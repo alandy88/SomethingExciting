@@ -185,7 +185,7 @@
 						"exec": [
 							"pm.test(\"Out of stock\", function () {\r",
 							"    if (pm.response.code == 200) {\r",
-							"        pm.expect(pm.response.text()).to.include(\"Out of stock\");\r",
+							"        pm.expect(pm.response.text()).to.include(\"In-store only\");\r",
 							"    } else{\r",
 							"        console.log(pm.response.code)\r",
 							"    }\r",
